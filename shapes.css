@@ -6,6 +6,14 @@
   margin: 0 auto;
 }
 
+span {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+/* *****  Basic Square ****** */
+/* **************************** */
+
 .base {
   position: relative;
   display: inline-block;
@@ -15,15 +23,7 @@
   background-color: royalblue;
 }
 
-span {
-  font-size: 25px;
-  font-family: sans-serif;
-}
-
-/* *****  Basic Square ****** */
-/* **************************** */
-
-.base .square {
+.base #sq {
   position: absolute;
   top: 80px;
   right: 60px;
@@ -39,7 +39,7 @@ span {
   border-right: 100px solid white;
 }
 
-.triangleVert span, .triangleHoriz span {
+.triangleVert > span, .triangleHoriz > span {
   position: absolute;
   text-align: center;
 }
@@ -48,7 +48,7 @@ span {
   border-bottom: 200px solid transparent;
 }
 
-.triup span {
+.triup > span {
   top: 100px;
   right: -48px;
 }
@@ -57,7 +57,7 @@ span {
   border-top: 200px solid transparent;
 }
 
-.tridown span {
+.tridown > span {
   bottom: 80px;
   right: -45px;
 }
@@ -73,7 +73,7 @@ span {
   border-left: 200px solid transparent;
 }
 
-.triright span {
+.triright > span {
   right: 60px;
   top: -25px;
 }
@@ -82,7 +82,7 @@ span {
   border-right: 200px solid transparent;
 }
 
-.trileft span {
+.trileft > span {
   left: 60px;
   top: -25px;
 }
@@ -94,7 +94,7 @@ span {
   border-radius: 50%;
 }
 
-.circle span {
+.circle > span {
   position: absolute;
   top: 88px;
   right: 67px;
@@ -108,7 +108,7 @@ span {
   border-radius: 50%;
 }
 
-.oval span {
+.oval > span {
   position: absolute;
   top: 35px;
   right: 75px;
@@ -142,13 +142,13 @@ span {
   -webkit-transform: rotate(180deg);
 } */
 
-.trapup span {
+.trapup > span {
   position: absolute;
   top: 23px;
   right: -4px;
 }
 
-.trapdown span {
+.trapdown > span {
   position: absolute;
   top: -53px;
   right: -4px;
