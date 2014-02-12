@@ -2,6 +2,10 @@
   text-align: center
 }
 
+.shapes-container {
+  margin: 0 auto;
+}
+
 .base {
   position: relative;
   display: inline-block;
@@ -16,11 +20,17 @@ span {
   font-family: sans-serif;
 }
 
+/* *****  Basic Square ****** */
+/* **************************** */
+
 .base .square {
   position: absolute;
   top: 80px;
   right: 60px;
 }
+
+/* ********  Triangle  ******** */
+/* **************************** */
 
 .triangleVert {
   width: 0px;
@@ -77,6 +87,9 @@ span {
   top: -25px;
 }
 
+/* *********  Circle  ********* */
+/* **************************** */
+
 .circle {
   border-radius: 50%;
 }
@@ -86,6 +99,23 @@ span {
   top: 88px;
   right: 67px;
 }
+
+/* ***********  Oval  ********* */
+/* **************************** */
+
+.oval {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.oval span {
+  position: absolute;
+  top: 35px;
+  right: 75px;
+}
+
+/* *********  Trapezoid  ******* */
+/* **************************** */
 
 .trapezoid {
   height: 0px;
@@ -124,5 +154,12 @@ span {
   right: -4px;
 }
 
+/* Media Queries */
+
+@media (min-width: 800px) {
+  .shapes-container {
+    width: 800px;
+  }
+}
 
 
