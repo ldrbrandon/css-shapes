@@ -1,0 +1,128 @@
+.headings {
+  text-align: center
+}
+
+.base {
+  position: relative;
+  display: inline-block;
+  margin: 30px 30px;
+  width: 200px;
+  height: 200px;
+  background-color: royalblue;
+}
+
+span {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.base .square {
+  position: absolute;
+  top: 80px;
+  right: 60px;
+}
+
+.triangleVert {
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid white;
+  border-right: 100px solid white;
+}
+
+.triangleVert span, .triangleHoriz span {
+  position: absolute;
+  text-align: center;
+}
+
+.triup {
+  border-bottom: 200px solid transparent;
+}
+
+.triup span {
+  top: 100px;
+  right: -48px;
+}
+
+.tridown {
+  border-top: 200px solid transparent;
+}
+
+.tridown span {
+  bottom: 80px;
+  right: -45px;
+}
+
+.triangleHoriz {
+  width: 0px;
+  height: 0px;
+  border-top: 100px solid white;
+  border-bottom: 100px solid white;
+}
+
+.triright {
+  border-left: 200px solid transparent;
+}
+
+.triright span {
+  right: 60px;
+  top: -25px;
+}
+
+.trileft {
+  border-right: 200px solid transparent;
+}
+
+.trileft span {
+  left: 60px;
+  top: -25px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.circle span {
+  position: absolute;
+  top: 88px;
+  right: 67px;
+}
+
+.trapezoid {
+  height: 0px;
+  width: 100px;
+}
+
+.trapup {
+  border-bottom: 75px solid transparent;
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+}
+
+.trapdown {
+  border-top: 75px solid transparent;
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+}
+
+/* This is another way to build a 
+  trapezoid using CSS transform */
+/* .trapflip {
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+} */
+
+.trapup span {
+  position: absolute;
+  top: 23px;
+  right: -4px;
+}
+
+.trapdown span {
+  position: absolute;
+  top: -53px;
+  right: -4px;
+}
+
+
+
