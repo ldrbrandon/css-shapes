@@ -197,6 +197,10 @@ a:visited, a:link {
   float: left;
 }
 
+:target {
+  background-color: forestgreen;
+}
+
 
 /* Media Queries */
 
