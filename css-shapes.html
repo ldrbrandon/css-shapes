@@ -6,22 +6,34 @@
   <link rel="stylesheet" type="text/css" href="shapes.css">
 </head>
 <body>
-  <div class="headings">
+  <div class="headings" id="top">
     <h1>CSS Shapes</h1>
     <h4>All the shapes are built based off of the square. Use dev tools(inspect element) to view the source code</h4>
     <h4> OR... checkout this github repo: <a href="https://github.com/ldrbrandon/css-shapes" target="_blank"> CSS Shapes </a></h4>
+    <ul class="shapes-list">
+      <li><a href="#sq">Square</a></li>
+      <li><a href="#tri-up">Triangle Up</a></li>
+      <li><a href="#tri-down">Triangle Down</a></li>
+      <li><a href="#tri-left">Triangle Left</a></li>
+      <li><a href="#tri-right">Triangle Right</a></li>
+      <li><a href="#circ">Circle</a></li>
+      <li><a href="#ovl">Oval</a></li>
+      <li><a href="#trapu">Trapezoid Up</a></li>
+      <li><a href="#trapd">Trapezoid Down</a></li>
+    </ul>
   </div>
 
   <div class="shapes-container">
-    <div class="base"><span id="sq">Square</span></div>
-    <div class="base triangleVert triup"><span>Triangle Up</span></div>
-    <div class="base triangleVert tridown"><span>Triangle Down</span></div>
-    <div class="base triangleHoriz trileft"><span>Triangle Left</span></div>
-    <div class="base triangleHoriz triright"><span>Triangle Right</span></div>
-    <div class="base circle"><span>Circle</span></div>
-    <div class="base oval"><span>Oval</span></div>
-    <div class="base trapezoid trapup"><span>Trapezoid</span></div>
-    <div class="base trapezoid trapdown"><span>Trapezoid</span></div>
+    <div class="base" id="sq"><span class="square">Square</span></div>
+    <div class="base triangleVert triup" id="tri-up"><span>Triangle Up</span></div>
+    <div class="base triangleVert tridown" id="tri-down"><span>Triangle Down</span></div>
+    <div class="base triangleHoriz trileft" id="tri-left"><span>Triangle Left</span></div>
+    <div class="base triangleHoriz triright" id="tri-right"><span>Triangle Right</span></div>
+    <div class="base circle" id="circ"><span>Circle</span></div>
+    <div class="base oval" id="ovl"><span>Oval</span></div>
+    <div class="base trapezoid trapup" id="trapu"><span>Trapezoid</span></div>
+    <div class="base trapezoid trapdown" id="trapd"><span>Trapezoid</span></div>
   </div>
+    <a id="back-top" href="#top">Back to top</a>
 </body>
 </html>
