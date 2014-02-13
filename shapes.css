@@ -2,13 +2,44 @@
   text-align: center
 }
 
+/***** Setting margin/spacing for shape container ******/
+
 .shapes-container {
   margin: 0 auto;
 }
 
+/*.shapes-container div {
+  margin: 15px auto;
+}*/
+
 span {
   font-size: 25px;
   font-family: sans-serif;
+}
+
+a:visited, a:link {
+  color: blue;
+}
+
+
+.foot {
+  text-align: center;
+  margin: 50px auto;
+}
+
+/***** Link back to the top of the page *****/
+/*** Fixed to the bottom left of the screen **/
+#back-top, #back-top:visited, #back-top:link {
+  position: fixed;
+  bottom: .8%;
+  left: .8%;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: steelblue;
+  padding: 5px 10px;
+  border-radius: 1px solid transparent;
 }
 
 /* *****  Basic Square ****** */
@@ -16,14 +47,14 @@ span {
 
 .base {
   position: relative;
-  display: inline-block;
-  margin: 30px 30px;
+  display: block;
+  margin: 30px auto;
   width: 200px;
   height: 200px;
   background-color: royalblue;
 }
 
-.base #sq {
+.base .square {
   position: absolute;
   top: 80px;
   right: 60px;
@@ -154,11 +185,29 @@ span {
   right: -4px;
 }
 
+/******** List of Shapes **********/
+
+.shapes-list {
+  list-style: none;
+  display: inline-block;
+}
+
+.shapes-list li {
+  margin: 3px 5px;
+  float: left;
+}
+
+
 /* Media Queries */
 
 @media (min-width: 800px) {
   .shapes-container {
     width: 800px;
+  }
+
+  .base {
+    display: inline-block;
+    margin: 30px 30px;
   }
 }
 
